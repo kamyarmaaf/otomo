@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}همه خبرها{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'auto/auto.css' %}" >
+{% endblock %}
+
+{% block content %}
+<section class="tabligh">
+    <div >
+        <img src="{% static 'auto/pic/Gmax-1.gif' %}" alt="tabligh">
+        <img src="{% static 'auto/pic/ilia.gif' %}" alt="tabligh">
+    </div>
+</section>
+<section id="akhbar">
+    <div class="ejtema">
+        <a href="https://www.aparat.com/Otomo"><img src="{% static 'auto/pic/020807aparat.gif' %}"></a>
+<!--        <img src="{% static 'auto/pic/020807telegram.gif' %}">-->
+    </div>
+    <div class="akharin">
+            <ul>
+                {% for khabar in khabars %}
+                {% include 'auto/include/khabar.html' %}
+                {% endfor %}
+            </ul>
+    </div>
+</section>
+{% endblock %}

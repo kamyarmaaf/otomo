@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load jformat %}
+{% load static %}
+{% block page_title %}{{khabar.titr}}{% endblock %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'auto/moarefi.css' %}" />
+{% endblock %}
+{% block content %}
+<section class="tabligh">
+  <div>
+    <img src="{% static 'auto/pic/Gmax-1.gif' %}" alt="tabligh" />
+    <img src="{% static 'auto/pic/ilia.gif' %}" alt="tabligh" />
+  </div>
+</section>
+<section id="main">
+<h2>{{ khabar.titr }}</h2>
+<section class="tarikh">
+  <div>
+    <p>
+    منتشر شده در {{ khabar.date|date }}
+    </p>
+    {% if khabar.hashtag1%}
+    <button>{{ khabar.hashtag1 }}</button>
+    {% endif %}
+    {% if khabar.hashtag1%}
+    <button>{{ khabar.hashtag2 }}</button>
+    {% endif %}
+  </div>
+</section>
+
+  {% include 'auto/include/right_sec_khabar.html' %}
+  <div class="tabl">
+    <a href="https://www.aparat.com/Otomo"
+      ><img src="{% static 'auto/pic/020807aparat.gif' %}"
+    /></a>
+  </div>
+  <div class="mol">
+    <ul>
+      {% for post in five_last %}
+      <li>
+        <a href="{% url 'khabars' post.slug %}">
+          <div class="parva3">
+            {%if post.image %}
+            <img src="{{ post.image.url }}" />
+            {% endif %}
+            <p>{{ post.titr }}</p>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

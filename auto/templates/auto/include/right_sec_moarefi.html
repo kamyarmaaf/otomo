@@ -1,0 +1,69 @@
+<div class="right-sec">
+        {% if review.sub_titr %}
+        <p>{{ review.sub_titr }}</p>
+        {% endif %}
+        {% if review.about_machine %}
+        <h2>درباره ی <strong>{{ review.name }}</strong></h2>
+        <p>{{ review.about_machine }}</p>
+        {% endif %}
+        {% if review.image_1 %}
+        <img src="{{review.image_1.url}}">
+        {% endif %}
+        {% if review.tarahi_zaheri %}
+        <h2>طراحی ظاهری {{ review.name }}</h2>
+        <p>{{ review.tarahi_zaheri }}</p>
+        {% endif %}
+        {% if review.image_2 %}
+        <img src="{{review.image_2.url}}">
+        {% endif %}
+        {% if review.moshakhasat_fanni %}
+        <h2>مشخصات فنی {{ review.name }}</h2>
+        <p>{{ review.moshakhasat_fanni }}</p>
+        {% endif %}
+        {% if review.image_3 %}
+        <img src="{{review.image_3.url}}">
+        {% endif %}
+        {% if review.tarahi_dakheli %}
+        <h2>طراحی داخلی {{ review.name }}</h2>
+        <p>{{ review.tarahi_dakheli }}</p>
+        {% endif %}
+        {% if review.image_4 %}
+        <img src="{{review.image_4.url}}">
+        {% endif %}
+        {% if review.mazaya %}
+        <h2>مزیت ها و معایب {{ review.name }}</h2>
+        <p>{{ review.mazaya }}</p>
+        {% endif %}
+        {% if review.image_5 %}
+        <img src="{{review.image_5.url}}">
+        {% endif %}
+        <div class="specs-container">
+                <ul>
+                        {% if car_details %}
+                        <li><span class="label">برند</span><span class="value">{{car_details.brand}}</span></li>
+                        <li><span class="label">مدل</span><span class="value">{{car_details.model}}</span></li>
+                        <li><span class="label">کلاس بدنه</span><span class="value">{{car_details.body_type}}</span></li>
+                        <li><span class="label">سال تولید</span><span class="value">{{car_details.production_year}}</span></li>
+                        <li><span class="label">حجم موتور</span><span class="value">{{car_details.engine_capacity}}</span></li>
+                        <li><span class="label">تعداد سیلندر</span><span class="value">{{car_details.cylinders}}</span></li>
+                        <li><span class="label">تعداد سوپاپ</span><span class="value">{{car_details.valve}}</span></li>
+                        <li><span class="label">تنفس</span><span class="value">{{car_details.tanafos}}</span></li>
+                        <li><span class="label">قدرت</span><span class="value">{{car_details.torque}}</span></li>
+                        <li><span class="label">گشتاور</span><span class="value">{{car_details.hp}}</span></li>
+                        <li><span class="label">شتاب صفر تا صد</span><span class="value">{{car_details.sefr_sad}}</span></li>
+                        <li><span class="label">حداکثر سرعت</span><span class="value">{{car_details.max_speed}}</span></li>
+                        <li><span class="label">گیربکس</span><span class="value">{{car_details.gearbox}}</span></li>
+                        <li><span class="label">انتقال قدرت</span><span class="value">{{car_details.differential}}</span></li>
+                        <li><span class="label">تعلیق جلو</span><span class="value">{{car_details.talig_jolo}}</span></li>
+                        <li><span class="label">تعلیق عقب</span><span class="value">{{car_details.talig_agab}}</span></li>
+                        <li><span class="label">وزن</span><span class="value">{{car_details.weight}}</span></li>
+                        <li><span class="label">حجم باک</span><span class="value">{{car_details.fuel_tank}}</span></li>
+                        <li><span class="label">مصرف سوخت</span><span class="value">{{car_details.masraf_sokht}}</span></li>
+                        <li><span class="label">ابعاد رینگ و لاستیک</span><span class="value">{{car_details.ring}}</span></li>
+                        <li><span class="label">برند مادر</span><span class="value">{{car_details.mother_brand}}</span></li>
+                        <li><span class="label">کشور سازنده</span><span class="value">{{car_details.country}}</span></li>
+
+                        {% endif %}
+                </ul>
+        </div>
+    </div>

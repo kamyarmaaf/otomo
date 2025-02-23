@@ -1,0 +1,9 @@
+<li>
+    <a href="{% url 'reviews' review.slug %}" >
+        <div class="khabar">
+            <img src="{{ review.image_1.url }}" alt="{{ review.title }}">
+            <h3>{{ review.titr }}</h3>
+            <div></div>
+        </div>
+    </a>
+</li>

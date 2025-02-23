@@ -1,0 +1,21 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="اوتومو یک رسانه تخصصی در حوزه خودرو است.این رسانه با هدف انتشار جدیدترین اخبار و ویدیو های خودرو آغاز به کار کرده و در تلاش است بهترین محتوا را در اختیار مخاطبینش قرار دهد." />
+    <meta name="author" content="Amirmohammad Pajohesh,saleh ,Mahdi Soltani" />
+    <title>{% block page_title %}auto mo{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" href="{% static 'auto/pic/otomo-black.png' %}">
+    {% block css_files %}
+    {% endblock %}
+</head>
+<body>
+    {% include "auto/include/header.html" %}
+    {% include "auto/include/abshar.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "auto/include/footer.html" %}
+</body>
+</html>

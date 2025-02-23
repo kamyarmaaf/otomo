@@ -1,0 +1,36 @@
+{% load static %}
+<footer>
+  <div class="footer-content">
+    <div class="footer-about">
+      <h4>درباره ما</h4>
+      <p>اوتومو یک رسانه تخصصی در حوزه خودرو است.این رسانه با هدف انتشار جدیدترین اخبار و ویدیو های خودرو آغاز به کار کرده و در تلاش است بهترین محتوا را در اختیار مخاطبینش قرار دهد.</p>
+    </div>
+    <div class="social-icons">
+      <h4>ما در شبکه های اجتماعی دنبال کنید</h4>
+      <a href="https://www.aparat.com/Otomo"><img class="default-image" src="{% static 'auto/pic/aparat-white.png' %}" alt="aparat">
+        <img class="hover-image" src="{% static 'auto/pic/aparat-blue.png' %}" alt="aparat">
+      </a>
+      <a href="https://www.youtube.com/@Otomo_ir"><img class="default-image" src="{% static 'auto/pic/youtube-white.png' %}" alt="youtube">
+        <img class="hover-image" src="{% static 'auto/pic/youtube-blue.png' %}" alt="youtube">
+      </a>
+      <a href="https://www.instagram.com/otomo.ir?igsh=MTZxMzFwd2hnZThvbQ=="><img class="default-image" src="{% static 'auto/pic/instagram-white.png' %}" alt="instagram">
+        <img class="hover-image" src="{% static 'auto/pic/instagram-blue.png' %}" alt="instagram">
+      </a>
+      <h2>تعداد بازدید امروز</h2>
+      {{views_count}}
+    </div>
+
+    <div class="footer-links">
+      <h4>لینک های کاربردی</h4>
+      <ul>
+        <li><a href="#">تماس با ما</a></li>
+        <li><a href="#">تبلیغات</a></li>
+        <li><a href="#">درباره ما</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>طراحی و کدنویسی سایت اتومو توسط  کامیار معاف صورت گرفته است و تمام حقوق قالب آن نزد وی محفوظ میباشد.</p>
+  </div>
+</footer>

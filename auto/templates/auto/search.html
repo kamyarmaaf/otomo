@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}search{% endblock %}
+{% block content %}
+    
+    <div id="search">
+        <form method="get">
+            <input type="text" name="query" placeholder="جست و جو..." value={{query}}>
+            <button type="submit">search</button>
+        </form>
+        <hr/>
+            <ul>
+                {% for result in results%}
+                    <li><a href="{% url 'khabars' result.slug %}">{{ result.titr }}</a></li>
+                {% empty %}
+                    <p>هیچ نتیجه ای یافت نشد برای "{{query}}"</p>
+                {% endfor %}
+            </ul>
+    </div>
+    <div class="khali"></div>
+{% endblock %}

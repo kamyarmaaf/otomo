@@ -1,0 +1,328 @@
+#container {
+  margin : 0 6rem;
+}
+
+#container img {
+  width: 100%;
+  height: 195px;
+  margin-bottom : 10px;
+  object-fit: cover;
+  border-radius : 15px;
+  position : inline-block;
+}
+
+#container h2 {
+  font-size: 3.5rem;
+  margin: 0 0 0 2rem;
+  color: #e4e4e4;
+  width: 10rem;
+}
+
+#container p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+
+#about {
+  text-align: center;
+  padding: 3rem;
+  background-color: #e48900;
+  margin-top: 5rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+  color: #353535;
+}
+
+
+
+#main-navigation nav a{
+    text-decoration : none;
+    padding : 2rem;
+    color : grey;
+}
+
+#main-navigation h1 a{
+    text-decoration : none;
+}
+
+.tabligh {
+    display : block;
+}
+
+
+.tabligh img {
+    height : 6rem;
+    width : 37rem;
+    max-width : 100%;
+    border-radius : 15px;
+    margin-left : 5rem;
+    margin-right : 1rem;
+    margin-bottom : 1rem;
+    margin-top : 2rem;
+}
+@media (max-width:768px) {
+  .tabligh img {
+    height : 4rem;
+    width : 100%;
+    border-radius : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-bottom : 0.5rem;
+    margin-top : 0rem;
+  }
+  .ejtema{
+    display : none;
+  }
+}
+
+.ejtema{
+    max-width : 22%;
+    max-height : 400px;
+    display : block-inline;
+    margin-left : 0;
+    float : left;
+}
+.ejtema img {
+  width: 100%;
+  height: 195px;
+  margin-bottom : 10px;
+  object-fit: cover;
+  object-position: top;
+  border-radius : 15px;
+  position : inline-block;
+}
+
+#container .mina{
+    width : 79%;
+    height : auto;
+    float : left;
+    justify-content : center;
+    margin :0 15px ;
+    margin-bottom : 2rem;
+}
+
+#container .mina .parva{
+    border-radius : 15px;
+	flex : 0 0 calc(45%-20px);
+    overflow : hidden;
+    width : 32rem;
+    height : 23rem;
+}
+
+#container .mina .parva img{
+    width : 100%;
+	height : 18rem;
+}
+
+.mina ul{
+    display : block;
+    margin-top : 0;
+    margin-left : 1rem;
+    padding : 0;
+}
+.mina h3{
+    display : -webkit-box;
+    -webkit-line-clamp : 2;
+    -webkit-box-orient : vertical;
+    overflow : hidden;
+    color : #2f2f2f;
+    line-height : 1.3;
+    text-overflow : ellipsis;
+    font-family : 'Yekan';
+}
+
+
+#container .mina .parva2{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    width : 20rem;
+    height : auto;
+    margin : 10px;
+	border-radius : 15px;
+	flex : 0 0 calc(45%-20px);
+	margin-bottom : 3rem;
+}
+#container .mina .parva2 img{
+    width : 100%;
+    height : 11.25rem;
+
+}
+@media (max-width:768px) {
+	
+	#container{
+		width : 100%;
+		margin : 0;
+		padding : 0;
+	}
+	.mina ul{
+		list-style : none;
+		margin : 0;
+		padding : 0;
+		
+	}
+	
+	#container .mina{
+		width : 100%;
+		height : auto;
+		justify-content : center;
+		margin-left : 0px;
+  }
+
+	  #container .mina .parva{
+		width : 100%;
+		height : auto;
+		border-radius : 15px;
+		padding-left : 0;
+	  }
+	  
+
+	  .mina ul{
+		display : block;
+	  }
+
+
+	  #container .mina .parva2{ 
+		width : 100%;
+		margin : 0;
+		margin-left : 2.4rem;
+		height : auto;
+		border-radius : 15px;
+		margin-bottom : 2rem;
+	  }
+}
+
+.mina ul li{
+    display : inline-block;
+}
+
+#akhbar{
+    direction : rtl;
+    margin : 1rem 3rem 1rem 3rem;
+}
+
+#akhbar button{
+    background: linear-gradient(to bottom, rgb(0,60,34), rgb(49,0,110));
+    color : white;
+    display : block;
+    font-size : 24px;
+    cursor: pointer;
+    padding : 0.75rem;
+    border-radius : 20px;
+    width : 100%;
+}
+
+#akhbar .akharin{
+    display : flex;
+    flex-wrap : wrap;
+    gap : 15px;
+    justify-content : right;
+    margin : 1rem 3rem;
+}
+li{
+    display : inline-block;
+}
+#akhbar .khabar{
+    flex : 0 0 calc(25%-20px);
+    overflow : hidden;
+    margin-left : 1rem;
+    width : 307px;
+    height : 312px;
+    max-height : 312px;
+    background-color : rgba(130,130,130,0.1);
+    border-radius : 12px;
+}
+
+.khabar img{
+    width : 100%;
+    height : 65%;
+    z-index : 10;
+    border-radius : 12px;
+}
+@media (max-width:768px) {	
+    #akhbar{
+        direction : ltr;
+        margin-right : 0;
+		margin-left : 0;
+}
+	
+	#akhbar .butt{
+		border : none;
+	}
+	#akhbar .butt button{
+		background: linear-gradient(to bottom, rgb(0,60,34), rgb(49,0,110));
+		color : white;
+		display : block;
+		font-size : 24px;
+		cursor: pointer;
+		padding : 0.75rem;
+		border-radius : 20px;
+		width : 100%;
+		}
+
+    #akhbar .akharin{
+        display : flex;
+        flex-wrap : wrap;
+        gap : 15px;
+        margin : 0;
+		margin-left : 0.5rem;
+}
+
+    #akhbar .khabar{
+        flex : 0 0 calc(50%);
+        overflow : hidden;
+        width : 150px;
+        height : 175px;
+        background-color : rgba(130,130,130,0.1);
+        border-radius : 12px;
+		margin-bottom : 0.5rem;
+		font-size : 1rem;
+		margin-left : 0.5rem;
+		padding:0;
+		margin : 0;
+}
+    .khabar img{
+        width : 100%;
+        height : 60%;
+        z-index : 10;
+        border-radius : 12px;
+    }
+	#akharin ul{
+		list-style : none;
+		margin : 0;
+		padding : 0;
+		display : flex;
+		flex-wrap : wrap;
+		gap : 10px;
+		justify-content : center;
+	}
+	#akharin ul li{
+		width : calc(50%-10px);
+		list-style : none;
+	}
+}
+
+.khabar h3{
+    color : #2f2f2f;
+    line-height : 1;
+    text-overflow : ellipsis;
+}
+h3{
+    text-align : right;
+    padding-right : 2rem;
+    padding-left : 1.5rem;
+    direction : rtl;
+
+
+}
+a{
+    text-decoration : none;
+}

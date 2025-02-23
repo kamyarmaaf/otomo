@@ -1,0 +1,8 @@
+<li>
+    <a href="{% url 'khabars' khabar.slug %}" >
+        <div class="khabar">
+            <img src="{{ khabar.image.url }}" alt="{{ khabar.title }}">
+            <h3>{{ khabar.titr }}</h3>
+        </div>
+    </a>
+</li>

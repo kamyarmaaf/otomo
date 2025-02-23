@@ -1,0 +1,61 @@
+{% load static %}
+<section class="nav1">
+    <div class="hamburger" onclick="toggleMenu()">&#9776</div>
+        <div id="menu" class="menu">
+            <a href="{% url 'all_khabars' %}">اخبار</a>
+            <a href="{% url 'all_review' %}">بررسی خودرو</a>
+            <a href="{% url 'about' %}">درباره ما</a>
+        </div>
+    <div class="sear">
+        <a href="{% url 'search'%}">
+        <img src="{% static 'auto/pic/search.png' %}"/>
+        </a>
+    </div>
+</section>
+<nav class="navbar">
+
+    <ul>
+        <li class="dropdown">
+            <a href="{% url 'home'%}">
+                <img style="position : absolute;top:-55px;right:9rem" width="150px" height="155px" src="{% static 'auto/pic/otomo_logo_transparent.png' %}" alt="tabligh">
+            </a>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">اخبار خودرو</a>
+                <ul class="dropdown-content">
+                    <li><a href="{% url 'all_khabars' %}">اخبار داخلی</a></li>
+                    <li><a href="{% url 'all_khabars' %}">اخبار خارجی</a></li>
+                    <li><a href="#">شرایط فروش</a></li>
+                </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn"> بررسی خودرو</a>
+            <ul class="dropdown-content">
+                <li><a href="{% url 'all_review' %}">ویدیو‌های‌بررسی</a></li>
+                <li><a href="#">مشخصات فنی</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">مقاله‌ها</a>
+            <ul class="dropdown-content">
+                <li><a href="#">فنی‌وآموزشی</a></li>
+                <li><a href="#">طراحی‌خودرو</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">درباره ما</a>
+            <ul class="dropdown-content">
+                <li><a href="{% url 'about' %}">راه های ارتباطی</a></li>
+            </ul>
+        </li>
+        <li><a href="{% url 'search' %}"><img class="srch" src="{% static 'auto/pic/search.png' %}"/></a></li>
+    </ul>
+
+</nav>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+</script>

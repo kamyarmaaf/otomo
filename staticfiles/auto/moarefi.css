@@ -1,0 +1,467 @@
+.tabligh div{
+    margin-left : 5rem;
+    margin-bottom : 1rem;
+}
+
+
+.tabligh img {
+    height : 100px;
+    width : 673px;
+    border-radius : 15px;
+    max-width : 47%;
+}
+
+#moarefi-movie{
+    margin-left : 5rem;
+    margin-right : 5rem;
+    width : auto;
+    height : 600px;
+    background: radial-gradient(circle, white, rgb(170,170,170));
+    border-radius : 25px;
+    direction : rtl;
+}
+
+#moarefi-movie p{
+    padding : 7rem 5rem;
+    display : inline-block;
+    position : relative;
+}
+
+#moarefi-movie a{
+    text-decoration : none;
+    font-weight : bold;
+    font-size : 29px;
+    color : rgb(0,0,200);
+}
+
+
+.film .parva{
+    width : 575px;
+    height : 320px;
+    border-radius : 15px;
+    position : relative;
+    top : -190px;
+    right : 700px;
+    max-width : 80%;
+    cursor: pointer;
+}
+
+.film .parva .frame{
+    width : 100%;
+    height : 100%;
+    border-radius : 15px;
+
+}
+
+.titr{
+    width : 500px;
+    height : auto;
+    position : relative;
+    top : -440px;
+    right : 5rem;
+}
+
+.sub-titr{
+    width : 500px;
+    height : auto;
+    position : relative;
+    top : -440px;
+    right : 5rem;
+}
+.tarikh{
+    direction : rtl;
+    margin-bottom : 1rem;
+}
+#main h2{
+    margin-right : 1rem;
+	padding-right : 0;
+}
+
+
+.tarikh div{
+    margin-top : 1rem;
+    margin-right : 1rem;
+    width : 64%;
+    height : 70px;
+    background-color : rgba(100,100,100, 0.2);
+    border-radius : 12px;
+    padding : 1.5rem;
+    color: #5f5f5f;
+}
+
+#main{
+    width : auto;
+    height : auto;
+    margin-left : 5rem;
+    margin-right : 5rem;
+    direction : rtl;
+}
+
+#main .left-sec{
+    width : 300px;
+    height : 800px;
+    position : relative;
+    display : inline-block;
+    margin-right : 5rem;
+    max-width : 80%;
+    top : 0px;
+}
+
+#main .right-sec{
+    width : 920px;
+    height : auto;
+    position : relative;
+    display : inline-block;
+    max-width : 80%;
+    direction : rtl;
+    margin-bottom : 5rem;
+}
+
+#main .right-sec p{
+    font-size : 15pt;
+    display : block;
+    padding : 1rem;
+    text-spacing : 1rem;
+    line-height : 2;
+    text-align : justify;
+    unicode-bidi : embed;
+    direction : rtl;
+}
+
+.tarikh button{
+    right : 20rem;
+    position : relative;
+    background-color : #f5f5f5;
+    color : black;
+    border : none;
+    cursor: pointer;
+    font-size : 14pt;
+    padding : 0.5rem;
+    border-radius : 12px;
+}
+
+
+#main .right-sec h2{
+    color : blue;
+    display : block;
+    padding-right : 1rem;
+}
+
+#main .right-sec img{
+    width : 890px;
+    margin : auto;
+    margin-bottom : 2rem;
+    display : block;
+    border-radius : 15px;
+    max-width : 100%;
+}
+
+#main .left-sec .left_sec_mo,
+#main .left-sec .left_sec_kha{
+    width : 100%;
+    height : 250px;
+    background-color : black;
+    color : white;
+    margin-bottom : 1rem;
+    border-radius : 12px;
+
+}
+
+.tab{
+    width : 320px;
+    height : 250px;
+    position : absolute;
+    top : 1300px;
+    left : 5rem;
+}
+.tab img{
+    width : 100%;
+    height : 100%;
+    border-radius : 12px;
+}
+
+.mo{
+    width : 300px;
+    height : auto;
+    position : absolute;
+    top : 1605px;
+    left : 9rem;
+}
+
+#main .mo .parva3{
+    width : 125%;
+    height : 350px;
+    background-color : white;
+    margin-bottom : 40px;
+    border-radius : 12px;
+}
+#main .mo .parva3 img{
+    width : 100%;
+    height : 65%;
+    border-radius : 12px 12px 0 0;
+}
+#main .mo ul{
+    list-style: none;
+
+}
+#main .mo li a{
+    text-decoration : none;
+    color : black;
+    text-align : center;
+}
+
+.mol{
+    width : 300px;
+    height : auto;
+    position : absolute;
+    top : 970px;
+    left : 9rem;
+}
+
+#main .mol .parva3{
+    width : 125%;
+    height : 350px;
+    background-color : white;
+    margin-bottom : 40px;
+    border-radius : 12px;
+}
+#main .mol .parva3 img{
+    width : 100%;
+    height : 250px;
+    border-radius : 12px 12px 0 0;
+}
+#main .mol ul{
+    list-style: none;
+
+}
+#main .mol li a{
+    text-decoration : none;
+    color : black;
+    text-align : center;
+}
+.tabl{
+    width : 320px;
+    height : 250px;
+    position : absolute;
+    top : 660px;
+    left : 5rem;
+}
+.tabl img{
+    width : 100%;
+    height : 100%;
+    border-radius : 12px;
+}
+
+
+.specs-container{
+    direction : rtl;
+    max-width : 70%;
+    margin : 10px auto;
+    background-color : #fff;
+    border-radius : 10px;
+    box-shadow : 0 4px 6px rgba(0,0,0,0.1);
+    overflow : hidden;
+}
+
+.specs-container ul{
+    list-style : none;
+    margin : 0;
+    padding : 0;
+}
+
+.specs-container li{
+    display : flex;
+    justify-content : space-between;
+    text-align : left;
+    padding : 15px 20px;
+    border-bottom : 1px solid #ddd;
+}
+
+.specs-container li:last-child{
+    border-bottom : none;
+}
+
+.specs-container li span{
+    font-size : 14px;
+}
+
+.specs-container li span.label{
+    color : #555;
+    font-weight : bold;
+}
+
+.specs-container li span.value{
+    color : #333;
+    margin-left : 55px;
+}
+
+.specs-container li:nth-child(odd){
+    background-color : rgba(230,230,230,0.5);
+}
+
+@media (max-width:768px) {
+  .tabligh img {
+    height : 4rem;
+    width : 100%;
+    border-radius : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-bottom : 0.5rem;
+    margin-top : 0;
+  }
+  .tabligh div{
+    width : 100%;
+    margin : 0;
+    margin-bottom : 1rem;
+    max-width : 100%;
+}
+.tabligh{
+    display : none;
+    max-width : 100%;
+    margin-left : 0;
+    padding-left : 0;
+}
+
+#main{
+    width : 100%;
+    height : auto;
+    margin-left : 0rem;
+    margin-right : 5rem;
+    direction : rtl;
+}
+#main h2{
+    margin-right : 1rem;
+}
+
+.tarikh{
+    direction : rtl;
+    margin-bottom : 1rem;
+	margin-top : 0;
+}
+
+.tarikh div{
+    margin-top : 1rem;
+    margin-right : 0;
+    width : 100%;
+    height : 4rem;
+    background-color : rgba(100,100,100, 0.2);
+    border-radius : 12px;
+    padding : 1rem;
+    color: #5f5f5f;
+}
+
+.tabl{
+	display : none;
+}
+.mol{
+	display : none;
+}
+
+.tarikh button{
+    right : 0.2rem;
+    position : relative;
+    background-color : #f5f5f5;
+    color : black;
+    border : none;
+    cursor: pointer;
+    font-size : 10pt;
+    padding : 0.5rem;
+    border-radius : 12px;
+}
+.tarikh p{
+	display : inline;
+	font-size : 11pt;
+}
+#main .right-sec h2{
+    color : blue;
+    display : block;
+    padding-right : 0.1rem;
+}
+
+#main .right-sec img{
+    width : 100%;
+    margin-bottom : 1rem;
+    display : block;
+    border-radius : 12px;
+    max-width : 100%;
+}
+#main .right-sec{
+    position : relative;
+    display : inline-block;
+    max-width : 100%;
+    direction : rtl;
+    margin-bottom : 0rem;
+}
+
+#main .right-sec p{
+    font-size : 12pt;
+    display : block;
+    padding : 1rem;
+    line-height : 2;
+}
+
+#moarefi-movie{
+    margin-left : 0;
+    margin-right : 0;
+    width : auto;
+    height : 600px;
+    background: radial-gradient(circle, white, rgb(170,170,170));
+    border-radius : 25px;
+    direction : rtl;
+}
+
+#moarefi-movie p{
+    padding : 3rem 2rem;
+    display : block;
+    position : relative;
+}
+
+#moarefi-movie a{
+    text-decoration : none;
+    font-weight : bold;
+    font-size : 16pt;
+    color : rgb(0,0,200);
+}
+
+.film .parva{
+    width : 100%;
+    height : auto;
+    border-radius : 15px;
+    position : relative;
+    top : 0;
+    right : auto;
+	text-align : center;
+    max-width : 100%;
+}
+
+.film .parva .frame{
+    width : auto;
+    height : 10.5rem;
+    border-radius : 15px;
+}
+
+.titr{
+    width : auto;
+    height : auto;
+    position : relative;
+    top : 1rem;
+    right : 1rem;
+	display : none;
+}
+
+.sub-titr{
+    width : auto;
+    height : auto;
+    position : relative;
+    top : 1rem;
+    right : 1rem;
+}
+.mo{
+	display : none;
+}
+.tab{
+	display : none;
+}
+
+}
+

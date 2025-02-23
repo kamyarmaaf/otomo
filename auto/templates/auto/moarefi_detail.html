@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load jformat %}
+{% load static %}
+{% block page_title %}{{review.title}}{% endblock %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'auto/moarefi.css' %}" >
+{% endblock %}
+{% block content %}
+<section class="tabligh">
+    <div >
+        <img src="{% static 'auto/pic/Gmax-1.gif' %}" alt="tabligh">
+        <img src="{% static 'auto/pic/ilia.gif' %}" alt="tabligh">
+    </div>
+</section>
+<section class="film">
+    <div id="moarefi-movie">
+        <p><a href="{% url 'all_review' %}">معرفی</a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">{{review.title}}</a> </p>
+
+        <div class="parva">
+            <iframe class="frame" src="{{ review.embed_code }}" frameborder="0" allowfullscreen></iframe>
+            <h3>{{ post.name }} </h3>
+        </div>
+
+        <div class="titr">
+            <h1>{{ review.titr }}:</h1>
+        </div>
+
+        <div class="sub-titr">
+            <h4>{{ review.sub_titr }}</h4>
+        </div>
+
+    </div>
+</section>
+<section class="tarikh">
+    <div>
+        منتشر شده در {{review.date|date}}
+        {% if review.hashtag1 %}
+            <button>{{ review.hashtag1 }}</button>
+        {% endif %}
+        {% if review.hashtag2 %}
+        <button>{{ review.hashtag2 }}</button>
+        {% endif %}
+    </div>
+</section>
+<section id="main">
+    {% include 'auto/include/right_sec_moarefi.html' %}
+    <div class="tab">
+    <a href="https://www.aparat.com/Otomo"><img src="{% static 'auto/pic/020807aparat.gif' %}"></a>
+</div>
+<div class="mo">
+    <ul>
+        {% for post in five_last %}
+            <li>
+                <a href="{% url 'reviews' post.slug %}" >
+                    <div class="parva3">
+                            <img src="{{ post.image_1.url }}"/>
+                            <p>{{ post.titr }}</p>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+</section>
+
+
+
+{% endblock %}

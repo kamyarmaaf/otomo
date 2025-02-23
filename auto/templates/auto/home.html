@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}اوتومو - جدیدترین ویدئوها و اخبار خودرو{% endblock %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'auto/auto.css' %}" >
+
+{% endblock %}
+
+{% block content %}
+<div class="ottomo.ir"></div>
+<section class="tabligh">
+    <div >
+        <img src="{% static 'auto/pic/Gmax-1.gif' %}" alt="tabligh">
+        <img src="{% static 'auto/pic/ilia.gif' %}" alt="tabligh">
+    </div>
+</section>
+<section id="container">
+
+    <div class="ejtema">
+        <a href="https://www.aparat.com/Otomo">
+            <img src="{% static 'auto/pic/020807aparat.gif' %}">
+        </a>
+    </div>
+
+    <div class="mina">
+            <ul>
+                {% for post in lposts %}
+                {% include 'auto/include/moarefi.html' %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for post in posts %}
+                {% include 'auto/include/moarefi2.html' %}
+                {% endfor %}
+            </ul>
+
+    </div>
+</section>
+<section id="akhbar">
+    <div class="butt">
+        <button>آخرین اخبار</button>
+    </div>
+
+    <div class="akharin">
+            <ul >
+                {% for khabar in khabars %}
+                {% include 'auto/include/khabar.html' %}
+                {% endfor %}
+            </ul>
+    </div>
+
+
+</section>
+
+{% endblock %}
