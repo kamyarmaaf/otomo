@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}درباره ما{% endblock %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'auto/about.css' %}" >
+{% endblock %}
+
+{% block content %}
+<div id="back">
+    <div><br/><br/></div>
+    <section id="about-ottomo">
+        <h2>درباره اوتومو</h2>
+        <div class="post-about">
+            <div class="post__content">
+                <p>اوتومو یک رسانه تخصصی در حوضه خودرو است.این رسانه با هدف انتشار جدیدترین اخبار و ویدیو های خودرویی آغاز به کار کرده و در تلاش است بهترین محتوی را در اختیار مخاطبینش قرار دهد.
+                این رسانه در مهرماه ۱۴۰۰تاسیس شده و همچنین اولین رسانه خودرویی استان کرمان است که به تست و بررسی خودرو های روز بازار می پردازد.
+                در سایت اوتومو میتوانید با خودروهای مختلف در قسمت هایی نظیر تجربه رانندگی بیشتر آشناشوید و اگر قصد خرید دارید به بهترین شکل میتوانید تصمیم بگیرید و همیشه سعی شده جدید ترین خودرو های بازار در این قسمت قرار بگیرند.
+                ازاین که همراه اوتومو هستید از شما متشکریم!</p>
+            </div>
+        </div>
+    </section>
+    <section id="all-posts">
+        <h2>تیم رسانه اوتومو</h2>
+        <ul>
+           <li>
+                <div class="post">
+                    <a href="#" >
+                        <img src="{% static 'auto/pic/mahdi.jpg' %}" alt="mahdi soltani"/>
+                        <div class="post__content">
+                            <h3>مهدی سلطانی</h3>
+                            <p></p>
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li>
+                <article class="post">
+                    <a href="#" >
+                        <img src="{% static 'auto/pic/amir.jpg' %}" alt="amir pajohesh"/>
+                        <div class="post__content"><h3>امیرمحمد پژوهش</h3>
+                            <p></p>
+                        </div>
+
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article class="post">
+                    <a href="#" >
+                        <img src="{% static 'auto/pic/saleh.jpg' %}" alt="saleh mansouri"/>
+                        <div class="post__content"><h3>صالح منصوری</h3>
+                            <p></p>
+                        </div>
+
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+</div>
+<div class="ejtema">
+        <a href="https://www.aparat.com/Otomo">
+            <img src="{% static 'auto/pic/020807aparat.gif' %}">
+        </a>
+    </div>
+{% endblock %}
